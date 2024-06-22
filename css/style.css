@@ -1848,3 +1848,17 @@ only screen and (min-width: 992px) and (max-width: 1200px),
 	color: #b2b2b2;
 	font-weight: 400;
 }
+
+#work-link{
+	color: #9c9c9c; 
+	font-family: 'BarlowCondensed', cursive; 
+}
+
+
+
+@font-face {
+    font-family: 'BarlowCondensed';
+    src: url('/fonts/BarlowCondensed-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
