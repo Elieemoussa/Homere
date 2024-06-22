@@ -1,0 +1,22 @@
+/* Change the text color to white on hover */
+#navbarcontent a:hover {
+    color: white;
+}
+#nav2 {
+    color: #9c9c9c; 
+    font-family: 'Barlow Condensed', sans-serif;  
+    text-decoration: none;
+}
+
+#nav{
+
+    font-family: 'Barlow Condensed', sans-serif;  
+    color: white; 
+    text-decoration: none;
+}
+
+.mr-2{
+    color: #9c9c9c;    
+}
+
+
