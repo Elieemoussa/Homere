@@ -1863,3 +1863,10 @@ only screen and (min-width: 992px) and (max-width: 1200px),
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'DINCondensed';
+    src: url('/fonts/DINCondensed-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
