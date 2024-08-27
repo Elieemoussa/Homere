@@ -1,10 +1,3 @@
-/* ===================================
---------------------------------------
-	Tulen | Photography HTML Template
-	Version: 1.0
---------------------------------------
-======================================*/
-
 
 'use strict';
 
@@ -52,6 +45,21 @@ $(window).on('load', function() {
 	});
 
 });
+
+
+/*------------------
+    Fallback Timer
+--------------------*/
+$(document).ready(function() {
+    var fallbackTime = 5000; // Set the fallback time in milliseconds (e.g., 5000ms = 5 seconds)
+    setTimeout(function() {
+        if ($("#preloder").is(":visible")) {
+            $("#preloder").fadeOut("slow");
+        }
+    }, fallbackTime);
+});
+
+
 
 (function($) {
 	/*------------------
