@@ -23,14 +23,33 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+		:root {
+            --lazy-loader-animation-duration: 300ms;
+        }
 
+        .lazyload {
+            display: block;
+        }
+
+        .lazyload,
+        .lazyloading {
+            opacity: 1;
+        }
+
+        .lazyloaded {
+            opacity: 1;
+            transition: opacity var(--lazy-loader-animation-duration);
+        }
+
+	</style>
 </head>
 <body style="background-color: black;" class="nice-scroll">
 	<!-- Page Preloder -->
 	<div id="preloder">
 		<div class="loader"></div>
 	</div>
-
+	<div id="bodycontent">
   <!-- First BAR -->
   <section  class="container">
 	<div class="pos-f-t">
@@ -106,89 +125,89 @@
 			<div class="gallery-warp ">
 				<div class="grid-sizer"></div>
 				<div class="gallery-item gi-big  ">
-						<img  src="img/202401/DCIM_111APPLE_IMG_1411.jpg"   alt="">
+						<img  src="img/202401/DCIM_111APPLE_IMG_1411.jpg"   alt="" class="lazyload">
 				</div>
 
 				<div class="gallery-item gi-long">			
-						<img src="img/202401/DCIM_111APPLE_IMG_1413.jpg" alt="">
+						<img src="img/202401/DCIM_111APPLE_IMG_1413.jpg" alt="" class="lazyload">
 				</div>
 
 				<div class="gallery-item gi-long">
-						<img src="img/202401/DCIM_111APPLE_IMG_1412.jpg" alt="">
+						<img src="img/202401/DCIM_111APPLE_IMG_1412.jpg" alt="" class="lazyload">
 				</div>
 
 				<div class="gallery-item gi-big ">
-						<img src="img/202401/DCIM_111APPLE_IMG_1410.jpg" alt="">
+						<img src="img/202401/DCIM_111APPLE_IMG_1410.jpg" alt="" class="lazyload">
 				</div>
 
 				<div class="gallery-item  gi-big ">
-						<img src="img/202401/DCIM_111APPLE_IMG_1409.jpg" alt="">
+						<img src="img/202401/DCIM_111APPLE_IMG_1409.jpg" alt="" class="lazyload">
 				</div>
 
 				<div class="gallery-item gi-long"> 
-						<img src="img//DCIM_111APPLE_IMG_1030.JPG" alt="">
+						<img src="img/gallery/DCIM_111APPLE_IMG_1030.JPG" alt="" class="lazyload">
 				</div>
 
-				<div class="gallery-item gi-long travel">
-						<img src="img/EFFECTS2.jpg" alt="">
+				<div class="gallery-item gi-long ">
+						<img src="img/gallery/EFFECTS2.jpg" alt="" class="lazyload">
 				</div>
 
-				<div class="gallery-item gi-long people">
-						<img src="img/IMG_6343.JPG" alt="">
+				<div class="gallery-item gi-long ">
+						<img src="img/gallery/IMG_6343.JPG" alt="" class="lazyload">
 				</div>
 
 				<div class="gallery-item animal">
-						<img src="img/DSC00176-Recovered.jpg" alt="">
+						<img src="img/gallery/DSC00176-Recovered.jpg" alt="" class="lazyload">
 				</div>
 
-				<div class="gallery-item gi-long animal">
-					<img src="img/DSC01305-Recovered.jpg" alt="">
+				<div class="gallery-item gi-long ">
+					<img src="img/gallery/DSC01305-Recovered.jpg" alt="" class="lazyload">
 			    </div>
 				<div class="gallery-item gi-big ">
-					<img src="img/mya.jpg" alt="">
+					<img src="img/gallery/mya.jpg" alt="" class="lazyload">
 			    </div>
-			    <div class="gallery-item gi-big test">
-				<img src="img/IMG_4951.JPG" alt="">
+			    <div class="gallery-item gi-big ">
+				<img src="img/gallery/IMG_4951.JPG" alt="" class="lazyload">
 		        </div>
 
-				<div class="gallery-item gi-long test">
-					<img src="img/DSC00742.jpg" alt="">
+				<div class="gallery-item gi-long ">
+					<img src="img/gallery/DSC00742.jpg" alt="" class="lazyload">
 			    </div>
-			    <div class="gallery-item gi-long test">
-				<img src="img/DSC01372.jpg" alt="">
+			    <div class="gallery-item gi-long ">
+				<img src="img/gallery/DSC01372.jpg" alt="" class="lazyload"> 
 		        </div>
-				<div class="gallery-item gi-long test">
-					<img src="img/IMG_5941.JPG" alt="">
+				<div class="gallery-item gi-long ">
+					<img src="img/gallery/IMG_5941.JPG" alt="" class="lazyload">
 				</div>
 	
-				<div class="gallery-item gi-long test">
-						<img src="img/DSC01220.jpg" alt="">
+				<div class="gallery-item gi-long ">
+						<img src="img/gallery/DSC01220.jpg" alt="" class="lazyload">
 				</div>
-				<div class="gallery-item gi-long test">
-					<img src="img/Group-3.jpg" alt="">
+				<div class="gallery-item gi-long ">
+					<img src="img/gallery/Group-3.jpg" alt="" class="lazyload">
 				</div>
 
-				<div class="gallery-item gi-big test">
-					<img src="img/DCIM_111APPLE_IMG_1029.JPG" alt="">
-					</div>
-	
-					<div class="gallery-item gi-long test">
-						<img src="img/DCIM_111APPLE_IMG_1032.JPG" alt="">
-					</div>
-					<div class="gallery-item gi-long test">
-					<img src="img/mya2.JPG" alt="">
-					</div>
+				<div class="gallery-item gi-big ">
+				<img src="img/gallery/DCIM_111APPLE_IMG_1029.JPG" alt="" class="lazyload">
+				</div>
+
+				<div class="gallery-item gi-long ">
+					<img src="img/gallery/DCIM_111APPLE_IMG_1032.JPG" alt="" class="lazyload">
+				</div>
+				<div class="gallery-item gi-long ">
+				<img src="img/gallery/mya2.JPG" alt="">
+				</div>
 					
-					<div class="gallery-item gi-long test">
-						<img src="img/DCIM_111APPLE_IMG_1033.JPG" alt="">			
-					</div>
-		
-					<div class="gallery-item gi-long test">
-							<img src="img/final.JPG" alt="">
-					</div>
-					<div class="gallery-item gi-big test">
-					    <img src="img/IMG_5604.PNG" alt="">
-					</div>
+				<div class="gallery-item gi-long ">
+					<img src="img/gallery/DCIM_111APPLE_IMG_1033.JPG" alt="" class="lazyload">			
+				</div>
+	
+				<div class="gallery-item gi-long ">
+						<img src="img/gallery/final.JPG" alt="" class="lazyload">
+				</div>
+				<div class="gallery-item gi-big ">
+					<img src="img/gallery/IMG_5604.PNG" alt="" class="lazyload">
+				</div>
 	
 	            
 				
@@ -196,6 +215,9 @@
 			</div>
 		
 	</section>
+
+	
+
 
 
 	<script src="js/vendor/jquery-3.2.1.min.js"  async></script>
@@ -220,7 +242,7 @@
 			<div class="container">
 				<div class="text-center row">
 					<div class=" mb-3 ">
-						<a id="top" href="#title1" style="display: inline-block;">
+						<a id="top" href="#top" style="display: inline-block;">
 							<img src="img/arrow.gif" alt="Scroll to Gallery" style="height: 70px; width: 80px;"/>
 						</a>
 						
@@ -253,21 +275,21 @@
 	</section>
 	
 	<script>
-    // Get a reference to the button element
-     const backButton = document.getElementById('top');
 
-    // Function to scroll back to the top of the page
-    function scrollToTop() {
+    document.getElementById('top').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default anchor behavior
     window.scrollTo({
         top: 0,
-        behavior: 'smooth' // For smooth scrolling
-       });
-    }
-
-    // document.addEventListener('contextmenu', function (e) {
-    //         e.preventDefault();
-    //     });			
+        behavior: 'smooth' // Smooth scroll to the top
+		});
+	});
+		
 	</script>
+
+
+
+
+</div>
 
 </body>
 
