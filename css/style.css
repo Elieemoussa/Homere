@@ -16,7 +16,6 @@ html,
 body {
 	height: 100%;
 	font-family: "Montserrat", sans-serif;
-	scroll-behavior: smooth;
 	
 }
 
@@ -1877,11 +1876,13 @@ only screen and (min-width: 992px) and (max-width: 1200px),
 	font-weight: 400;
 }
 
-#work-link{
+.mini-menu ul li a {
 	color: #9c9c9c; 
-	font-family: 'BarlowCondensed', cursive; 
+	font-family: 'BarlowCondensed', sans-serif; 
 	text-decoration: none;
 }
+
+
 
 
 
