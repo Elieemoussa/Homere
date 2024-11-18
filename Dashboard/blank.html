@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Homere Admin</title>
+    <title>Purple Admin</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="assets/vendors/ti-icons/css/themify-icons.css">
@@ -276,13 +276,13 @@
               <div class="collapse" id="ui-basic">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="">Image</a>
+                    <a class="nav-link" href="pages/ui-features/buttons.html">Image</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="reel.html">Reel</a>
+                    <a class="nav-link" href="pages/ui-features/dropdowns.html">Reel</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="">Video</a>
+                    <a class="nav-link" href="pages/ui-features/typography.html">Video</a>
                   </li>
                 </ul>
               </div>
@@ -324,57 +324,12 @@
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
-
-            <div class="col-12 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Post</h4>
-                  <p class="card-description"> Please Upload your photos here!</p>
-                  <form action="/submit" method="POST">
-                    <div class="form-group">
-                      <label for="file-upload">File upload</label>
-                      <input type="file" id="text" name="img[]" class="file-upload-default" style="display: none;">
-                      <div class="input-group col-xs-12">
-                        <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
-                        <span class="input-group-append">
-                          <button class="file-upload-browse btn btn-gradient-primary py-3" type="button">Upload</button>
-                        </span>
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label class="col-sm-3 col-form-label">Category</label>
-                      <div class="col-sm-9">
-                        <select class="form-select">
-                          <option>Category1</option>
-                          <option>Category2</option>
-                          <option>Category3</option>
-                          <option>Category4</option>
-                        </select>
-                      </div>
-                    </div>
-                  </form>        
-                </div>
-              </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
           </div>
           <!-- content-wrapper ends -->
           <!-- partial:../../partials/_footer.html -->
           <footer class="footer">
             <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2023 <a href="" target="_blank">Elie</a>. All rights reserved.</span>
+              <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2023 <a href="https://www.bootstrapdash.com/" target="_blank">BootstrapDash</a>. All rights reserved.</span>
               <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i></span>
             </div>
           </footer>
@@ -400,28 +355,4 @@
     <!-- Custom js for this page -->
     <!-- End custom js for this page -->
   </body>
-
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const fileInput = document.querySelector(".file-upload-default");
-      const fileUploadInfo = document.querySelector(".file-upload-info");
-      const uploadButton = document.querySelector(".file-upload-browse");
-      const form = document.getElementById("file-upload-form");
-  
-      // Trigger file input click when the upload button is clicked
-      uploadButton.addEventListener("click", () => {
-        fileInput.click();
-      });
-  
-      // Update the text input with the selected file name
-      fileInput.addEventListener("change", () => {
-        if (fileInput.files.length > 0) {
-          fileUploadInfo.value = fileInput.files[0].name;
-          // Optionally, automatically submit the form when a file is selected
-          form.submit();  // This will submit the form with the file
-        }
-      });
-    });
-  </script>
 </html>
